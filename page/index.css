@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+
+
+    background-color: rgba(255, 255, 255, 1);
+}
+#app{
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    position: relative;
+}
+.login{
+    height: 100%;
+    width: 100%;
+  
+   box-sizing: border-box;
+   
+}
+.form{
+    width: 500px;
+    height: 300px;
+  /* background-color: #f9f6fb; */
+    border: 1px solid;
+    margin: 300px auto;
+    border-radius: 10px;
+
+}
+.form> div{
+    margin: 20px;
+    text-align: center;
+}
+
+
+.item{
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+}
+.inp{
+    padding: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+    width: 300px;
+}
+.item .btn{
+    width: 150px;
+    height: 40px;
+    line-height: 40px;  
+    position: absolute;
+    top: calc(50% - 5px);
+    left:calc(50% - 75px) ;
+    /* border: 1px solid; */
+    background-color: #0fe77b;
+    color: #000;
+    cursor: pointer;
+    box-sizing: border-box;
+
+
+}
+.item .btn:hover{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* 主页面样式 */
+.main{
+    position: relative;
+    width: 100%;
+    height: 960px;
+    /* background-color: rgba(1, 1, 1, .5); */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* border: 1px solid; */
+}
+.content{
+  
+    width: 100%;
+    height: 100%;
+}
+.content_let{
+   float: left;
+   width: 14%;
+   height: 100%;
+   /* border: 1px solid #f40; */
+    box-sizing: border-box;
+
+}
+.content_right::after,.content_let::after{
+    content: "";
+    clear: both;
+}
+.users::-webkit-scrollbar{
+    width: 0px;
+    background-color: #f5ecec;
+}
+.content_let .user-list{
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, .5);
+}
+.title{
+    padding: 15px;
+    border-bottom: 2px solid #ddd;
+    font-size: 14px;
+
+}
+.title span{
+    color: #f6f5f5;
+}
+.users{
+    height: 700px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    /* border: 1px solid; */
+}
+.users .items{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.users .items:hover{
+    color: #cfcfcf;
+}
+.users .items.active{
+    color: #fff;
+}
+.content_right{
+    position: relative;
+    width: 85.8%;
+    height: 100%;
+    float: right;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(212, 201, 196); */
+
+}
+.content_right .web{
+width: 100%;
+margin-top: 10px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+font-weight: 700;
+}
+.add-list{
+width: 100%;
+/* position: absolute; */
+left: calc(50% - 50px) ;
+text-align: center;
+top: 40px;
+}
+
+.add-list .log{
+    margin-top: 5px;
+  font-size: 12px;
+} 
+
+.add-list .log span{
+    font-weight: 600;
+    color: #0f49c7;
+}
+.chars-list{
+    width: 1800px;
+    height: 50%;
+    width: 100%;
+   
+}
+.scoll{
+    height: 65.5%;
+    overflow-y: auto;
+
+}
+.scoll::-webkit-scrollbar{
+    width: 1px;
+    background-color: #ddd;
+}
+.chars-list li{
+    margin-left: 20px;
+    padding: 8px;
+}
+.chars-list li .user{
+    font-weight: 600;
+    color: #0f49c7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sendMsg{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    height: 20%;
+    margin-left: 20px;
+   
+
+
+}
+.line{
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 100px;
+}
+.sendMsg #cpnt{
+    padding: 0 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: 0;
+    width: 70%;
+    height: 20px;
+    font-size: 16px;
+}
+.sendMsg .btn{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #39a763;
+
+    cursor: pointer;
+}
+.sendMsg .btn:hover{
+    background-color: #41c875;
+}
+.sendMsg .user{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #0f49c7;
+    vertical-align: middle;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    /* border: 1px solid; */
+}

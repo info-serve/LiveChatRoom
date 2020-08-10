@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时聊天室</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="app">
+        <!--登录界面-->
+        <div class="login" id="she" style="display:block;">
+            <div class="form">
+                <div>
+                    <h2>Login to the chat room</h2>
+                </div>
+                <div id="dd">
+                    <ul>
+                        <li class="item">
+                            <label for="">昵&nbsp;&nbsp;&nbsp;称&nbsp;:</label>
+                            <input type="text" class="inp userN" />
+                        </li>
+                        <li class="item"><label for="">密&nbsp;&nbsp;&nbsp;码&nbsp;:</label>
+                            <input type="password" class="inp userP" />
+                            <p style="padding-top: 5px;box-sizing: border-box;font-size: 12px;font-weight: 600;">
+                                initPwd：123456</p>
+                        </li>
+                        <li class="item">
+                            <div class="btn cc">进入聊天室</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 聊天界面 -->
+        <div class="main" style="display: none;">
+            <div class="content">
+                <div class="content_let">
+                    <div class="user-list">
+                        <div class="title">在线人数：<span>0</span></div>
+                        <ul class="users">
+                            <li class="items all active">所有人</li>s
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_right">
+                    <div class="web">欢迎来到刘宝宝聊天室</div>
+                    <div class="scoll">
+                        <ul class="add-list">
+                        </ul>
+                        <ul class="chars-list">
+                        </ul>
+                    </div>
+                    <div class="sendMsg">
+                        <div class="line"></div>
+                        <span class="gray">对</span>
+                        <span class="user">所有人</span>
+                        <span class="gray">说<b>&nbsp;:</b></span>
+                        <input type="text" id="cpnt" placeholder="输入聊天内容">
+                        <span class="btn" id="btnd">发送</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <script src="./js/socket.io.js"></script> -->
+
+    <script src="../page/js/jquery-3.3.1.js"></script>
+    <script src="./js/pageStyle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+
+</html>
